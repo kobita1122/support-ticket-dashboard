@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support Ticket Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Support Ticket Dashboard</h1>
+
+<div class="controls">
+  <button onclick="filter('ALL')">All</button>
+  <button onclick="filter('OPEN')">Open</button>
+  <button onclick="filter('CLOSED')">Closed</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>User</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody id="tickets"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
